@@ -1,0 +1,190 @@
+.bootstrap-select .dropdown-toggle {
+  @apply tw-font-normal focus:!tw-outline-none;
+}
+
+.bootstrap-select.dropup .dropdown-menu {
+  @apply !tw-mb-3 tw-rounded-b-none tw-border-b-0;
+}
+
+.bootstrap-select:not(.dropup) .dropdown-menu {
+  @apply tw-rounded-t-none tw-border-t-0;
+}
+
+.bootstrap-select:not(.dropup) .dropdown-toggle[aria-expanded="true"] {
+  @apply tw-rounded-b-none;
+}
+
+.bootstrap-select.dropup .dropdown-toggle[aria-expanded="true"] {
+  @apply tw-rounded-t-none;
+}
+
+.bootstrap-select.fit-width .dropdown-toggle .caret {
+  @apply tw-absolute -tw-right-[6px];
+}
+
+.bootstrap-select .dropdown-menu > li:first-child > a {
+  @apply tw-rounded-none;
+}
+
+.bootstrap-select.open > .dropdown-toggle,
+.bootstrap-select.open > .dropdown-toggle:hover,
+.bootstrap-select .dropdown-toggle:active,
+.bootstrap-select .dropdown-toggle:focus {
+  @apply tw-ring-offset-0 tw-border-transparent;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+  @apply tw-text-neutral-400;
+}
+
+.bootstrap-select.btn-group.disabled,
+.bootstrap-select.btn-group > .disabled,
+.bootstrap-select.disabled,
+.bootstrap-select > .disabled {
+  @apply tw-bg-neutral-100 tw-pointer-events-none;
+}
+
+/* Not support for other button sizes? */
+.bootstrap-select .btn {
+  font-size: 13.5px;
+  height: 34px;
+}
+
+.bootstrap-select .dropdown-header + li a {
+  @apply tw-rounded-b-none;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  @apply tw-normal-case rtl:tw-text-right;
+}
+
+.bootstrap-select.btn-group .bs-placeholder .filter-option {
+  color: #a1b4cc;
+}
+
+.error .bootstrap-select .dropdown-toggle,
+.has-error .bootstrap-select .dropdown-toggle,
+.error
+  .bootstrap-select.open
+  > .dropdown-toggle
+  .has-error
+  .bootstrap-select.open
+  > .dropdown-toggle {
+  @apply !tw-border-danger-500 !tw-shadow-none tw-ring-0 tw-ring-offset-0 tw-text-danger-500;
+}
+
+.error .bootstrap-select .dropdown-toggle:hover,
+.has-error .bootstrap-select .dropdown-toggle:hover {
+  @apply tw-ring-0 tw-bg-danger-50 tw-text-danger-700;
+}
+
+.error .bootstrap-select .dropdown-toggle:focus,
+.has-error .bootstrap-select .dropdown-toggle:focus {
+  @apply !tw-border-danger-500 tw-outline-none tw-ring-1 !tw-ring-danger-500;
+}
+
+.bootstrap-select .status {
+  @apply tw-bg-neutral-100 tw-text-neutral-500;
+}
+
+.bs-searchbox .form-control {
+  @apply !tw-rounded-md;
+}
+
+.bootstrap-select.input-group-btn.open .dropdown-toggle,
+.input-group-select .bootstrap-select.open .dropdown-toggle,
+.input-group-select .bootstrap-select .dropdown-toggle:focus {
+  @apply tw-z-20 tw-ring-offset-0 tw-border-transparent;
+}
+
+.bootstrap-select.show-tick .dropdown-menu li.selected a span.check-mark {
+  @apply tw-mt-[5px] tw-text-neutral-600;
+}
+
+.simple-bootstrap-select .bootstrap-select .dropdown-toggle {
+  @apply tw-border-0 tw-pl-0 !tw-bg-transparent !tw-shadow-none !tw-ring-0;
+}
+
+.simple-bootstrap-select .dropdown-menu {
+  @apply tw-mt-0;
+}
+
+.simple-bootstrap-select .bootstrap-select.dropup .dropdown-menu {
+  @apply tw-mb-0;
+}
+
+[dir="rtl"] .bootstrap-select.btn-group .dropdown-toggle .caret {
+  right: auto;
+  left: 12px;
+}
+
+.ajax-remove-values-option.bootstrap-select.ajax-search.btn-group
+  .dropdown-toggle
+  .caret {
+  margin-right: 17px;
+}
+
+.select-placeholder .input-group {
+  @apply tw-hidden;
+}
+
+.select-placeholder label,
+.select-placeholder label small {
+  @apply tw-blur-sm tw-opacity-60;
+}
+
+.select-placeholder:after {
+  content: " ";
+  background-size: 800px 104px;
+  height: 34px;
+}
+
+.select-placeholder:after {
+  @apply tw-bg-neutral-200/50 !tw-block !tw-opacity-100 tw-relative !tw-w-full tw-border tw-border-solid tw-border-neutral-300 tw-rounded-md;
+}
+
+.bootstrap-select.ajax-remove-values-option:not(.select-placeholder)
+  .ajax-clear-values {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>')
+    no-repeat center center;
+}
+
+.bootstrap-select.ajax-remove-values-option:not(.select-placeholder)
+  .ajax-clear-values {
+  @apply tw-absolute tw-top-[10px] tw-z-[99] tw-w-[15px] tw-h-[15px] ltr:tw-right-[38px] rtl:tw-left-[38px];
+}
+
+.bootstrap-select .caret {
+  @apply !-tw-mt-[5px];
+}
+
+.bootstrap-select.dropup .caret {
+  @apply !tw-mt-0;
+}
+
+.bootstrap-select .dropdown-toggle .caret {
+  @apply ltr:tw-right-[18px] rtl:tw-left-3 rtl:tw-right-auto;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+  @apply rtl:tw-right-0 rtl:tw-mr-auto rtl:tw-text-right rtl:tw-pr-0 rtl:tw-pl-4;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  @apply tw-truncate;
+}
+
+.input-group-select .input-group-addon {
+  @apply tw-opacity-0;
+}
+
+[dir="rtl"] .input-group-select .bootstrap-select .btn {
+  @apply !tw-rounded-r-md !tw-rounded-l-none;
+}
+
+.bootstrap-select .dropdown-menu li.active small {
+  @apply !tw-text-neutral-500;
+}

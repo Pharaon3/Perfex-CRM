@@ -1,0 +1,204 @@
+.form-wrap.form-builder .frmb-control {
+  @apply tw-shadow-sm;
+}
+
+.form-wrap.form-builder .frmb-control li {
+  @apply !tw-shadow-none tw-border tw-border-solid tw-border-neutral-200;
+}
+
+.form-wrap.form-builder .frmb-control li:hover {
+  @apply !tw-bg-neutral-50;
+}
+
+.frmb .field-actions .del-button {
+  @apply tw-float-right;
+}
+
+.web-to-lead-form .frmb .prev-holder .checkbox label::before,
+.web-to-lead-form .frmb .prev-holder .radio label::before {
+  @apply !tw-hidden;
+}
+
+.web-to-lead-form .frmb .checkbox input[type="checkbox"],
+.web-to-lead-form .frmb .checkbox input[type="radio"] {
+  @apply !tw-opacity-100;
+}
+
+.frm-holder .access-wrap,
+.frm-holder .toggle-wrap,
+.web-to-lead-form .other-wrap,
+.web-to-lead-form .maxlength-wrap,
+.web-to-lead-form .copy-button,
+.web-to-lead-form .frmb-control .fb-separator,
+.subtype-wrap,
+.web-to-lead-form .option-actions,
+.web-to-lead-form .field-options a.remove,
+.web-to-lead-form li[type="datetime-local"] .value-wrap,
+.web-to-lead-form li[type="datetime"] .value-wrap {
+  @apply !tw-hidden;
+}
+
+.paragraph-field.form-field {
+  @apply tw-text-neutral-600 tw-text-[14px] tw-leading-[25px];
+}
+
+.form-wrap.form-builder .frmb .prev-holder input[type="number"] {
+  @apply !tw-w-full;
+}
+
+.frmb-control li.input-set-control:first-child {
+  @apply !tw-rounded-t-[4px];
+}
+
+.form-wrap.form-builder .frmb .field-actions .btn {
+  @apply tw-font-normal;
+}
+
+.form-wrap.form-builder .frmb .field-actions .btn:first-child {
+  @apply !tw-rounded-none;
+}
+
+.form-wrap.form-builder .frmb .field-label,
+.form-wrap.form-builder .frmb .legend {
+  @apply !tw-font-medium !tw-text-neutral-600 tw-mb-1 !tw-text-sm;
+}
+
+.name-wrap input,
+.stage-wrap .form-field input[type="color"],
+.stage-wrap .form-field input[type="date"],
+.stage-wrap .form-field input[type="file"],
+.stage-wrap .form-field input[type="datetime-local"],
+.stage-wrap .form-field select[multiple="true"],
+.web-to-lead-form
+  [id^="frmb-"][id$="-form-wrap"]
+  .frmb
+  .form-field
+  .form-group.field-options
+  input[type="text"] {
+  @apply tw-cursor-not-allowed tw-pointer-events-none !tw-bg-neutral-100 tw-text-neutral-400;
+}
+
+.cb-wrap li.disabled {
+  @apply tw-pointer-events-none tw-opacity-60 tw-bg-neutral-100;
+}
+
+.web-to-lead-form
+  .stage-wrap
+  .checkbox
+  input[type="checkbox"]:checked
+  + label::after,
+.web-to-lead-form
+  .stage-wrap
+  .checkbox
+  input[type="radio"]:checked
+  + label::after {
+  content: " ";
+}
+
+.stage-wrap .form-field input[type="color"],
+.stage-wrap .form-field input[type="date"] {
+  width: 100% !important;
+  appearance: textfield;
+}
+
+.stage-wrap .form-field input[type="color"]::-webkit-color-swatch-wrapper,
+.stage-wrap .form-field input[type="color"]::-moz-color-swatch-wrapper,
+.stage-wrap .form-field input[type="color"]::-webkit-color-swatch,
+.stage-wrap .form-field input[type="color"]::-moz-color-swatch {
+  @apply !tw-hidden;
+}
+
+​.stage-wrap .form-field input[type="date"] {
+  @apply tw-text-neutral-100;
+}
+
+[dir="rtl"] [id^="frmb-"][id$="-form-wrap"] .frmb .field-actions {
+  left: 0 !important;
+  right: inherit;
+}
+
+[id^="frmb-"][id$="-form-wrap"] .frmb li.form-field {
+  @apply !tw-border !tw-border-dashed !tw-border-transparent tw-p-4;
+}
+
+[id^="frmb-"][id$="-form-wrap"] .frmb li.form-field:hover {
+  @apply tw-shadow-none tw-outline-none !tw-border-neutral-300 tw-rounded;
+}
+
+[id^="frmb-"][id$="-form-wrap"] .frmb li.form-field.delete {
+  @apply !tw-bg-danger-50;
+}
+
+.form-wrap.form-builder .frmb .field-actions {
+  @apply -tw-mt-px -tw-mr-px;
+}
+
+.form-wrap.form-builder .frmb .field-actions .btn {
+  @apply !tw-border-x-0 !tw-border-neutral-300 !tw-border-t !tw-border-r !tw-rounded-none !tw-text-neutral-600 hover:!tw-bg-neutral-50 hover:!tw-text-neutral-800 active:!tw-z-20 active:!tw-relative;
+}
+
+.form-wrap.form-builder .frmb .field-actions .btn:nth-child(2) {
+  @apply !tw-border-l;
+}
+
+.form-wrap.form-builder .frmb .form-elements {
+  @apply !tw-bg-neutral-100/60 !tw-border-neutral-200 !tw-py-6 !tw-pr-6;
+}
+
+.form-wrap.form-builder .frmb li .close-field {
+  @apply !tw-bottom-[16px] !tw-text-sm !tw-text-neutral-600 !tw-border-neutral-200;
+}
+
+.form-wrap.form-builder .empty .frmb {
+  @apply !tw-border-[1.5px] !tw-border-neutral-300;
+}
+
+.form-wrap.form-builder .frmb .sortable-options {
+  @apply !tw-bg-neutral-200;
+}
+
+.form-wrap.form-builder .frmb .sortable-options > li .remove {
+  @apply !tw-bg-danger-500 !tw-text-white !tw-px-2 !tw-py-1 !tw-rounded-md !tw-inline-flex tw-items-center tw-justify-center !tw-border-danger-500 !tw-h-auto !tw-w-auto tw-mt-0.5 !tw-leading-4 !tw-top-auto;
+}
+
+.form-wrap.form-builder .frmb .option-actions a,
+.form-wrap.form-builder .frmb .option-actions button {
+  @apply tw-text-neutral-700 tw-bg-white tw-border-neutral-300 tw-inline-flex tw-items-center tw-cursor-pointer;
+}
+
+.form-wrap.form-builder .frmb li.moving,
+.form-wrap.form-builder .frmb li.ui-sortable-helper {
+  @apply !tw-shadow-lg !tw-shadow-neutral-400/20;
+}
+
+[id^="frmb-"][id$="-form-wrap"] .btn-primary {
+  @apply tw-text-white;
+}
+
+[id^="frmb-"][id$="-form-wrap"] .frmb {
+  margin: 0 0 0 20px !important;
+}
+
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements input[type="text"],
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements input[type="color"],
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements input[type="date"],
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements input[type="number"],
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements .fld-label,
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements select,
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements textarea,
+.form-wrap.form-builder .frmb .prev-holder input[type="number"],
+.form-wrap.form-builder .frmb .prev-holder input[type="text"],
+.form-wrap.form-builder .frmb .prev-holder input[type="email"],
+.form-wrap.form-builder .frmb .prev-holder select,
+.form-wrap.form-builder .frmb .prev-holder textarea {
+  @apply !tw-rounded-md !tw-border !tw-border-neutral-300 !tw-placeholder-neutral-400 !tw-shadow-sm focus:!tw-border-primary-500 focus:!tw-outline-none focus:!tw-ring-1 focus:!tw-ring-primary-500 focus:!tw-shadow-none;
+}
+
+.form-wrap.form-builder .frmb .required-asterisk {
+  @apply tw-text-danger-500 tw-float-left tw-mt-1.5 tw-mr-1;
+}
+
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements .false-label:first-child,
+[id^="frmb-"][id$="-form-wrap"] .frmb .form-elements label:first-child {
+  @apply !tw-font-medium;
+}

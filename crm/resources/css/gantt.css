@@ -1,0 +1,40 @@
+body.gantt {
+  margin: inherit;
+  border: inherit;
+  position: inherit;
+  width: inherit;
+}
+
+.gantt .grid-row:nth-child(even) {
+  fill: theme("colors.neutral.200");
+}
+
+.gantt .lower-text,
+.gantt .upper-text {
+  font-size: 13px;
+  fill: theme("colors.neutral.700");
+  font-weight: 500;
+}
+
+.gantt .bar-label {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.gantt .bar-label.big {
+  fill: theme("colors.neutral.900");
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.gantt .bar {
+  fill: theme("colors.neutral.600");
+}
+
+.gantt .ganttGreen .bar {
+  fill: theme("colors.success.500");
+}
+
+.gantt .ganttRed .bar {
+  fill: theme("colors.warning.600");
+}

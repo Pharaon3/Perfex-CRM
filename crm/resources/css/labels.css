@@ -1,0 +1,58 @@
+@layer components {
+  .label {
+    @apply tw-font-medium tw-text-xs tw-px-2.5 tw-py-1 tw-rounded-lg tw-inline-flex tw-items-center;
+  }
+
+  a.label:hover,
+  a.label:focus {
+    @apply tw-cursor-pointer tw-no-underline;
+  }
+
+  .label:empty {
+    @apply tw-hidden;
+  }
+
+  .label-default {
+    @apply tw-bg-neutral-50 tw-border tw-border-solid tw-border-neutral-200 tw-text-neutral-700;
+  }
+
+  .label-default[href]:hover,
+  .label-default[href]:focus {
+    @apply tw-bg-neutral-100 tw-text-neutral-800;
+  }
+  .label-primary {
+    @apply tw-bg-primary-50 tw-border tw-border-solid tw-border-primary-200 tw-text-primary-600;
+  }
+  .label-primary[href]:hover,
+  .label-primary[href]:focus {
+    @apply tw-bg-primary-100 tw-text-primary-700;
+  }
+  .label-success {
+    @apply tw-bg-success-50 tw-border tw-border-solid tw-border-success-200 tw-text-success-600;
+  }
+  .label-success[href]:hover,
+  .label-success[href]:focus {
+    @apply tw-bg-success-100 tw-text-success-700;
+  }
+  .label-info {
+    @apply tw-bg-info-50 tw-border tw-border-solid tw-border-info-100 tw-text-info-600;
+  }
+  .label-info[href]:hover,
+  .label-info[href]:focus {
+    @apply tw-bg-info-100 tw-text-info-700;
+  }
+  .label-warning {
+    @apply tw-bg-warning-50 tw-border tw-border-solid tw-border-warning-200 tw-text-warning-600;
+  }
+  .label-warning[href]:hover,
+  .label-warning[href]:focus {
+    @apply tw-bg-warning-100 tw-text-warning-700;
+  }
+  .label-danger {
+    @apply tw-bg-danger-50 tw-border tw-border-solid tw-border-danger-100 tw-text-danger-600;
+  }
+  .label-danger[href]:hover,
+  .label-danger[href]:focus {
+    @apply tw-bg-danger-100 tw-text-danger-700;
+  }
+}

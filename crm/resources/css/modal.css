@@ -1,0 +1,51 @@
+body.modal-open {
+  @apply tw-overflow-hidden;
+}
+
+.modal {
+  @apply tw-z-[10000];
+}
+
+.modal-header .close {
+  @apply tw-text-[30px] tw-font-light tw-w-7 tw-h-7 tw-text-neutral-400 tw-opacity-100 -tw-mt-1 tw-outline-none hover:tw-text-neutral-600 active:tw-text-neutral-600;
+}
+
+.modal-header {
+  @apply tw-rounded-tl-md tw-rounded-t-md tw-bg-white tw-px-4 tw-py-5;
+}
+
+.modal-title {
+  @apply tw-font-medium tw-text-neutral-700;
+}
+
+.modal-content {
+  @apply tw-shadow-sm tw-rounded-md tw-border-0;
+}
+
+.modal-open .dropdown-menu {
+  @apply tw-z-[10001];
+}
+
+.modal-body {
+  @apply tw-px-4 tw-py-6;
+}
+
+.modal-backdrop {
+  @apply tw-bg-neutral-700/70;
+}
+
+.modal-backdrop.in {
+  @apply tw-opacity-90;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .modal-xxl {
+    width: 98%;
+    max-width: 1500px;
+  }
+}

@@ -1,0 +1,5 @@
+@layer components {
+  .badge {
+    @apply tw-inline tw-rounded-full tw-bg-neutral-100 tw-px-2.5 tw-py-0.5 tw-text-xs tw-font-medium tw-text-neutral-800;
+  }
+}

@@ -1,0 +1,95 @@
+@layer components {
+  .dropdown-menu {
+    border: 0;
+  }
+
+  .dropdown-menu {
+    @apply tw-rounded-lg tw-bg-white tw-shadow-md tw-ring-1 tw-ring-neutral-900/5 tw-ring-opacity-5 focus:tw-outline-none tw-z-[9000] tw-mt-3;
+  }
+
+  .dropdown-menu .divider {
+    @apply tw-bg-neutral-100 tw-my-1;
+  }
+
+  .dropdown-menu > li > a {
+    @apply tw-px-4 tw-py-1.5 tw-text-neutral-900 tw-w-full tw-break-words tw-whitespace-normal;
+  }
+
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    @apply tw-bg-neutral-100 tw-text-neutral-900 tw-outline-none;
+  }
+
+  .dropdown-menu > .active > a,
+  .dropdown-menu > .active > a:hover,
+  .dropdown-menu > .active > a:focus {
+    @apply tw-bg-neutral-100 tw-text-neutral-900;
+  }
+
+  .dropdown-menu > .disabled > a,
+  .dropdown-menu > .disabled > a:hover,
+  .dropdown-menu > .disabled > a:focus {
+    @apply tw-text-neutral-500;
+  }
+
+  .dropdown-header {
+    @apply tw-text-neutral-800 tw-text-base tw-font-medium tw-px-3.5;
+  }
+
+  /* sub */
+  .dropdown-submenu {
+    @apply tw-relative;
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 0 6px 6px 6px;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: theme("colors.neutral.400");
+    margin-top: 5px;
+    margin-right: -10px;
+  }
+
+  .dropdown-submenu:hover > a:after {
+    border-left-color: theme("colors.neutral.500");
+  }
+
+  .dropdown-submenu.pull-left {
+    float: none;
+  }
+
+  .dropdown-submenu.pull-left > .dropdown-menu {
+    border-radius: 6px;
+    margin-top: 0.2px;
+    border-top-left-radius: 0;
+  }
+
+  .dropdown-submenu.pull-left > .dropdown-menu li.active a:hover,
+  .dropdown-submenu.pull-left > .dropdown-menu li a:hover,
+  .dropdown-submenu.pull-left > .dropdown-menu li.active a {
+    border-top-left-radius: 0;
+  }
+
+  .dropdown-menu-right {
+    @apply rtl:tw-right-0;
+  }
+}

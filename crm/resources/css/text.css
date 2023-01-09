@@ -1,0 +1,50 @@
+@layer components {
+  .text-muted {
+    @apply tw-text-neutral-500;
+  }
+
+  .text-primary {
+    @apply tw-text-primary-600;
+  }
+
+  a.text-primary:hover,
+  a.text-primary:focus {
+    @apply tw-text-primary-700;
+  }
+
+  .text-success {
+    @apply tw-text-success-600;
+  }
+
+  a.text-success:hover,
+  a.text-success:focus {
+    @apply tw-text-success-700;
+  }
+
+  .text-info {
+    @apply tw-text-info-600;
+  }
+
+  a.text-info:hover,
+  a.text-info:focus {
+    @apply tw-text-info-700;
+  }
+
+  .text-warning {
+    @apply tw-text-warning-600;
+  }
+
+  a.text-warning:hover,
+  a.text-warning:focus {
+    @apply tw-text-warning-700;
+  }
+
+  .text-danger {
+    @apply tw-text-danger-500;
+  }
+
+  a.text-danger:hover,
+  a.text-danger:focus {
+    @apply tw-text-danger-600;
+  }
+}

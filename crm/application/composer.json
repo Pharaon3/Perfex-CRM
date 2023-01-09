@@ -1,0 +1,30 @@
+{
+    "require": {
+        "php" : "^7.4",
+        "cocur/slugify": "^4.0",
+        "neitanod/forceutf8": "~2.0",
+        "tecnickcom/tcpdf": "^6.2",
+        "studio-42/elfinder": "^2.1",
+        "stripe/stripe-php": "^7.0",
+        "phpmailer/phpmailer": "^6.2.0",
+        "erusev/parsedown": "^1.7",
+        "omnipay/mollie": "^5.0",
+        "omnipay/braintree": "~4.0@dev",
+        "omnipay/paypal": "^3.0",
+        "willdurand/email-reply-parser": "^2.8",
+        "instamojo/instamojo-php": "^0.3.0",
+        "bainternet/php-hooks": "^1.0",
+        "paypal/paypal-checkout-sdk": "1.0.1",
+        "xemlock/htmlpurifier-html5": "^0.1.11",
+        "authorizenet/authorizenet": "2.0.2",
+        "sonata-project/google-authenticator": "^2.2",
+        "ddeboer/imap": "^1.10",
+        "zbateson/mail-mime-parser": "^1.3",
+        "nesbot/carbon": "^2.55",
+        "league/omnipay": "^3.2",
+        "pusher/pusher-php-server": "^7.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "twilio/sdk": "^6.32",
+        "illuminate/collections": "^8.77"
+    }
+}

@@ -1,0 +1,43 @@
+@layer components {
+  .progress {
+    @apply tw-bg-neutral-100 tw-shadow-none;
+  }
+
+  .progress-bar[data-percent="0.00"],
+  .progress-bar[data-percent="0"] {
+    @apply tw-ml-1 tw-text-neutral-700;
+  }
+
+  .progress.active .progress-bar,
+  .progress-bar.active {
+    animation: progress-bar-stripes 2s linear infinite;
+  }
+
+  .progress-bar {
+    @apply tw-bg-primary-600 tw-text-white tw-shadow-none;
+  }
+
+  .progress-bar-success {
+    @apply tw-bg-success-500;
+  }
+
+  .progress-bar-info {
+    @apply tw-bg-info-600;
+  }
+
+  .progress-bar-warning {
+    @apply tw-bg-warning-600;
+  }
+
+  .progress-bar-danger {
+    @apply tw-bg-danger-600;
+  }
+
+  .progress-bar-default {
+    @apply tw-bg-neutral-600;
+  }
+
+  .progress-bar-mini {
+    @apply tw-h-1.5;
+  }
+}

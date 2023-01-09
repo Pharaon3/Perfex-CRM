@@ -1,0 +1,97 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./labels";
+@import "./text";
+@import "./background";
+@import "./pagination";
+@import "./alerts";
+@import "./buttons";
+@import "./form";
+@import "./dropdown";
+@import "./progress-bar";
+@import "./tabs";
+@import "./datetimepicker";
+@import "./panel";
+@import "./table";
+@import "./gantt";
+@import "./modal";
+@import "./badge";
+@import "./select";
+@import "./formbuilder";
+
+@layer components {
+  .h1 .small,
+  .h1 small,
+  .h2 .small,
+  .h2 small,
+  .h3 .small,
+  .h3 small,
+  .h4 .small,
+  .h4 small,
+  .h5 .small,
+  .h5 small,
+  .h6 .small,
+  .h6 small,
+  h1 .small,
+  h1 small,
+  h2 .small,
+  h2 small,
+  h3 .small,
+  h3 small,
+  h4 .small,
+  h4 small,
+  h5 .small,
+  h5 small,
+  h6 .small,
+  h6 small {
+    @apply tw-text-neutral-600;
+  }
+
+  a {
+    text-decoration: none !important;
+    outline: none !important;
+  }
+
+  a {
+    @apply tw-text-primary-600 focus:tw-text-primary-700;
+  }
+
+  a.disabled {
+    pointer-events: none;
+  }
+
+  .bold,
+  b,
+  strong {
+    @apply tw-font-semibold;
+  }
+
+  .small,
+  small {
+    @apply tw-text-sm;
+  }
+
+  .caret {
+    border: solid theme("colors.neutral.800");
+    border-style: solid !important;
+    border-width: 0 1px 1px 0 !important;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-top: -5.3px;
+  }
+
+  [dir="rtl"] .caret {
+    margin-right: 10px;
+  }
+
+  .dropup .caret {
+    border-width: 0 1px 1px 0 !important;
+    transform: rotate(-135deg);
+  }
+
+  .dropup.btn-group .caret {
+    margin-top: 0;
+  }
+}

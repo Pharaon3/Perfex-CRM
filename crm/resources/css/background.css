@@ -1,0 +1,44 @@
+@layer utilities {
+  .bg-primary {
+    @apply tw-bg-primary-600 tw-text-white;
+  }
+  a.bg-primary:hover,
+  a.bg-primary:focus {
+    @apply tw-bg-primary-700 tw-text-white;
+  }
+  .bg-neutral {
+    @apply tw-bg-neutral-50 tw-text-neutral-700;
+  }
+  a.bg-neutral:hover,
+  a.bg-neutral:focus {
+    @apply tw-bg-neutral-200 tw-text-neutral-800;
+  }
+  .bg-success {
+    @apply tw-bg-success-500 tw-text-white;
+  }
+  a.bg-success:hover,
+  a.bg-success:focus {
+    @apply tw-bg-success-600 tw-text-white;
+  }
+  .bg-info {
+    @apply tw-bg-info-600 tw-text-white;
+  }
+  a.bg-info:hover,
+  a.bg-info:focus {
+    @apply tw-bg-info-700 tw-text-white;
+  }
+  .bg-warning {
+    @apply tw-bg-warning-600 tw-text-white;
+  }
+  a.bg-warning:hover,
+  a.bg-warning:focus {
+    @apply tw-bg-warning-700 tw-text-white;
+  }
+  .bg-danger {
+    @apply tw-bg-danger-600 tw-text-white;
+  }
+  a.bg-danger:hover,
+  a.bg-danger:focus {
+    @apply tw-bg-danger-700 tw-text-white;
+  }
+}
